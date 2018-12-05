@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     ## print the guestbook
-    return render_template("admin.html", entries=model.get_entries())
+    return render_template("index.html", entries=model.get_entries())
 
 @app.route("/add")
 def addentry():
